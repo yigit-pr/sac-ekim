@@ -1,0 +1,63 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { Users, LayoutDashboard, FileText } from 'lucide-react';
+---
+
+<AdminLayout title="Admin Paneli">
+  <div class="min-h-screen bg-slate-50 flex">
+    {/* Sidebar */}
+    <aside class="w-64 bg-slate-900 text-white fixed h-full top-0 left-0">
+      <div class="p-6">
+        <h1 class="text-2xl font-bold font-display">İzmir<span class="text-secondary">Clinic</span></h1>
+        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Admin Paneli</p>
+      </div>
+      
+      <nav class="mt-6">
+        <a href="/admin" class="flex items-center gap-3 px-6 py-4 text-white bg-white/10 transition-colors">
+          <LayoutDashboard className="w-5 h-5" />
+          Genel Bakış
+        </a>
+        <a href="/admin/leads" class="flex items-center gap-3 px-6 py-4 text-slate-300 hover:bg-white/5 hover:text-white transition-colors">
+          <Users className="w-5 h-5" />
+          Başvurular
+        </a>
+        <a href="/admin/content" class="flex items-center gap-3 px-6 py-4 text-slate-300 hover:bg-white/5 hover:text-white transition-colors">
+          <FileText className="w-5 h-5" />
+          İçerik Yönetimi
+        </a>
+      </nav>
+    </aside>
+
+    {/* Main Content */}
+    <main class="flex-1 ml-64 p-8">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-slate-800">Genel Bakış</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-slate-500 font-medium">Toplam Başvuru</h3>
+            <p class="text-4xl font-bold text-slate-900 mt-2">--</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-slate-500 font-medium">Bekleyen</h3>
+            <p class="text-4xl font-bold text-yellow-600 mt-2">--</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-slate-500 font-medium">Tamamlanan</h3>
+            <p class="text-4xl font-bold text-green-600 mt-2">--</p>
+          </div>
+        </div>
+        
+        <p class="text-slate-500">
+          Sol menüden <strong>Başvurular</strong> sekmesine giderek gelen formları görüntüleyebilirsiniz.
+        </p>
+      </div>
+    </main>
+  </div>
+</AdminLayout>
+
+<style>
+  /* Override default layout padding if needed */
+  main {
+    padding-top: 2rem;
+  }
+</style>

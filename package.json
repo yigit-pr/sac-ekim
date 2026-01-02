@@ -1,0 +1,40 @@
+{
+  "name": "gazi-clinic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "yigit",
+    "email": "yigit@pryazilim.com"
+  },
+  "scripts": {
+    "dev": "astro dev --port 3005",
+    "start": "astro dev --port 3005",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/vercel": "^9.0.2",
+    "@prisma/client": "5.10.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "astro": "^5.1.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.562.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20.11.0",
+    "postcss": "^8.4.0",
+    "prisma": "5.10.0",
+    "typescript": "^5.3.0"
+  }
+}

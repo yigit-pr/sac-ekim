@@ -1,0 +1,36 @@
+---
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
+import StickyBar from '../components/layout/StickyBar';
+import '../styles/globals.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "İzmir Clinic - Premium Saç Ekimi ve Estetik Hizmetleri" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | İzmir Clinic</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Header client:load />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+		<StickyBar client:load />
+	</body>
+</html>

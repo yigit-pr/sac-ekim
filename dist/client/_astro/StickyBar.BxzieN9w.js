@@ -1,0 +1,11 @@
+import{j as e,B as a}from"./Button.BTgHZ_63.js";import"./index.ai7qpRr1.js";import{c as s}from"./createLucideIcon.D5mcegGy.js";/**
+ * @license lucide-react v0.562.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const t=[["path",{d:"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719",key:"1sd12s"}]],r=s("message-circle",t);/**
+ * @license lucide-react v0.562.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=[["path",{d:"M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",key:"9njp5v"}]],l=s("phone",n);function d(){return e.jsxs(e.Fragment,{children:[e.jsxs("div",{className:"fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-100 p-3 flex gap-3 md:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]",children:[e.jsxs("a",{href:"https://wa.me/905555555555",target:"_blank",rel:"noopener noreferrer",className:"flex-1 relative",children:[e.jsx("div",{className:"absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full animate-bounce whitespace-nowrap z-10 w-fit",children:"Ücretsiz Ön Görüşme"}),e.jsxs(a,{variant:"secondary",className:"w-full bg-green-600 hover:bg-green-700 text-white shadow-none border-0 relative overflow-visible",children:[e.jsx(r,{className:"w-4 h-4 mr-2"}),"WhatsApp"]})]}),e.jsx("a",{href:"tel:+905555555555",className:"flex-1",children:e.jsxs(a,{variant:"primary",className:"w-full shadow-none",children:[e.jsx(l,{className:"w-4 h-4 mr-2"}),"Hemen Ara"]})})]}),e.jsx("div",{className:"hidden md:flex fixed bottom-8 right-8 z-40 flex-col gap-4",children:e.jsx("a",{href:"https://wa.me/905555555555",target:"_blank",rel:"noopener noreferrer",children:e.jsx("div",{className:"bg-green-600 text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform cursor-pointer flex items-center justify-center",children:e.jsx(r,{className:"w-8 h-8"})})})})]})}export{d as default};

@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+// DİKKAT: Süslü parantezleri { } sildik.
+// Next.js bileşenleri genelde "default export" olduğu için doğrusu budur.
+import Hero from '../components/home/Hero';
+import Services from '../components/home/Services';
+import About from '../components/home/About';
+import BeforeAfter from '../components/home/BeforeAfter';
+---
+
+<Layout title="Premium Saç Ekimi Merkezi">
+	<Hero client:load />
+	<Services client:load />
+	<About client:load />
+	<BeforeAfter client:load />
+</Layout>
