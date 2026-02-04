@@ -1,0 +1,146 @@
+---
+/**
+ * GraftCalculator.astro
+ * Luxury Hair Transplant Graft Estimation Tool.
+ */
+---
+
+<div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+    <div class="flex flex-col md:flex-row">
+        
+        <!-- Left Side: Selection -->
+        <div class="flex-1 p-8 md:p-12 bg-white">
+            <h3 class="text-2xl font-bold text-slate-900 mb-8">Dökülme Tipinizi Seçin</h3>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6" id="norwood-grid">
+                {[1, 2, 3, 4, 5, 6].map((type) => (
+                    <button 
+                        class="norwood-box group relative p-4 rounded-xl border-2 border-slate-100 hover:border-[#C49A6C]/50 transition-all duration-300 flex flex-col items-center gap-3 bg-slate-50/50"
+                        data-type={type}
+                        data-grafts={type * 800 + 500} 
+                        data-hours={type + 4}
+                    >
+                        <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 text-slate-400 group-[.selected]:text-[#C49A6C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M20 21a8 8 0 0 0-16 0" />
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Tip {type}</span>
+                        
+                        <!-- Selected Indicator -->
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-[#C49A6C] rounded-full flex items-center justify-center scale-0 group-[.selected]:scale-100 transition-transform">
+                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                <path d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                    </button>
+                ))}
+            </div>
+            
+            <p class="mt-8 text-sm text-slate-400 italic">
+                * Bu değerler yaklaşık bir tahmindir. Kesin sonuç için uzman muayenesi gereklidir.
+            </p>
+        </div>
+
+        <!-- Right Side: Results -->
+        <div class="w-full md:w-[400px] bg-[#111827] p-8 md:p-12 text-white flex flex-col justify-center relative overflow-hidden">
+            <!-- Decorative Background Element -->
+            <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-[#C49A6C]/10 rounded-full blur-3xl"></div>
+            
+            <div class="relative z-10 space-y-10">
+                <div>
+                    <span class="text-[#C49A6C] font-bold text-sm tracking-[0.2em] uppercase mb-1 block">Analiz Sonucu</span>
+                    <h4 class="text-3xl font-display font-bold">Kişisel Planınız</h4>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#C49A6C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm mb-1 font-medium italic">Tahmini Greft</p>
+                            <p class="text-3xl font-bold tabular-nums" id="graft-count">0</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#C49A6C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm mb-1 font-medium italic">Operasyon Süresi</p>
+                            <p class="text-3xl font-bold tabular-nums" id="session-duration">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <a 
+                        href="#whatsappForm" 
+                        class="w-full bg-[#C49A6C] hover:bg-[#b08a5c] text-white font-bold py-5 rounded-xl transition-all duration-300 block text-center shadow-lg shadow-[#C49A6C]/20 hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                        Fiyat Teklifi Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script is:inline>
+    const boxes = document.querySelectorAll('.norwood-box');
+    const graftElement = document.getElementById('graft-count');
+    const durationElement = document.getElementById('session-duration');
+
+    function animateValue(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            element.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            // Remove previous selection
+            boxes.forEach(b => {
+                b.classList.remove('selected');
+                b.classList.remove('border-[#C49A6C]');
+                b.classList.remove('bg-[#C49A6C]/10');
+            });
+
+            // Add new selection
+            box.classList.add('selected');
+            box.classList.add('border-[#C49A6C]');
+            box.classList.add('bg-[#C49A6C]/10');
+
+            const grafts = parseInt(box.dataset.grafts);
+            const hours = box.dataset.hours;
+
+            // Update UI with animation
+            animateValue(graftElement, 0, grafts, 500);
+            durationElement.innerHTML = hours + ' Saat';
+        });
+    });
+
+    // Default selection
+    boxes[2].click();
+</script>
+
+<style>
+    .norwood-box.selected {
+        border-color: #C49A6C;
+        background-color: rgba(196, 154, 108, 0.1);
+    }
+</style>
