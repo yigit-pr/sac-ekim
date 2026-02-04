@@ -7,12 +7,51 @@ import HeroWithOverlayForm from "../components/home/HeroWithOverlayForm.astro";
 import Services from "../components/home/Services";
 import About from "../components/home/About";
 import BeforeAfter from "../components/home/BeforeAfter";
-// import WhatsAppWizard from '../components/home/WhatsAppWizard.astro';
+import GraftCalculator from "../components/hair/GraftCalculator.astro";
+import HealingTimeline from "../components/hair/HealingTimeline.astro";
 ---
 
 <Layout title="Premium Saç Ekimi Merkezi">
 	<HeroWithOverlayForm />
+
+	<!-- Graft Calculator Section -->
+	<section class="py-24 bg-[#F9FAFB]">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-16 space-y-4">
+				<h2
+					class="text-3xl md:text-4xl font-bold font-display text-slate-900"
+				>
+					Greft Hesaplayıcı
+				</h2>
+				<div class="w-20 h-1 bg-[#1E3A8A] mx-auto"></div>
+				<p class="text-slate-500 max-w-xl mx-auto italic">
+					İhtiyacınız olan greft sayısını saniyeler içinde öğrenin.
+				</p>
+			</div>
+			<GraftCalculator />
+		</div>
+	</section>
+
 	<Services client:load />
 	<About client:load />
+
+	<!-- Healing Timeline Section -->
+	<section class="py-24 bg-white overflow-hidden">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-16 space-y-4">
+				<h2
+					class="text-3xl md:text-4xl font-bold font-display text-slate-900"
+				>
+					İyileşme Süreci
+				</h2>
+				<div class="w-20 h-1 bg-[#1E3A8A] mx-auto"></div>
+				<p class="text-slate-500 max-w-xl mx-auto italic">
+					Yeni saçlarınıza giden yolculuğu adım adım takip edin.
+				</p>
+			</div>
+			<HealingTimeline />
+		</div>
+	</section>
+
 	<BeforeAfter client:load />
 </Layout>
