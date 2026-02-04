@@ -26,7 +26,7 @@ const results = [
     {
         id: 4,
         title: "Sakal Ekimi",
-        image: "https://images.unsplash.com/photo-1590540179852-2110a54f673a?q=80&w=800", // Beard
+        image: "/images/result-beard-uploaded.jpg", // Beard
         technique: "DHI",
     },
     {
