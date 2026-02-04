@@ -20,7 +20,7 @@ const results = [
     {
         id: 3,
         title: "Ön Hat Tasarımı",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop", // Mediterranean man
+        image: "/images/result-frontline-uploaded.jpg", // Mediterranean man
         technique: "Estetik",
     },
     {
