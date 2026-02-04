@@ -9,8 +9,7 @@ const navigation = [
     { name: "Anasayfa", href: "/" },
     { name: "Hakkımızda", href: "#about" },
     { name: "Hizmetler", href: "#services" },
-    { name: "Sonuçlar", href: "#results" },
-    { name: "İletişim", href: "#contact" },
+    { name: "İletişim", href: "#whatsappForm" },
 ];
 
 export default function Header() {
@@ -38,9 +37,11 @@ export default function Header() {
                                 {item.name}
                             </a>
                         ))}
-                        <Button size="sm" className="ml-4">
-                            Ücretsiz Analiz
-                        </Button>
+                        <a href="#whatsappForm">
+                            <Button size="sm" className="ml-4">
+                                Ücretsiz Analiz
+                            </Button>
+                        </a>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -70,9 +71,11 @@ export default function Header() {
                             {item.name}
                         </a>
                     ))}
-                    <Button className="w-full mt-2" onClick={() => setMobileMenuOpen(false)}>
-                        Ücretsiz Analiz
-                    </Button>
+                    <a href="#whatsappForm" onClick={() => setMobileMenuOpen(false)}>
+                        <Button className="w-full mt-2">
+                            Ücretsiz Analiz
+                        </Button>
+                    </a>
                 </div>
             )}
         </header>

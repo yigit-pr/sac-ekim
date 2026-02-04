@@ -55,10 +55,6 @@ export default function About() {
                                 </div>
                             ))}
                         </div>
-
-                        <Button size="lg" variant="outline">
-                            Ekibimizle Tanışın
-                        </Button>
                     </div>
                 </div>
             </div>
