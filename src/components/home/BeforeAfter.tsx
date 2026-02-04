@@ -8,31 +8,31 @@ const results = [
     {
         id: 1,
         title: "4500 Greft",
-        image: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=600&auto=format&fit=crop", // Close up scalp/hair
+        image: "/images/result-1.png", // Close up scalp/hair
         technique: "Sapphire FUE",
     },
     {
         id: 2,
         title: "3200 Greft",
-        image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=600&auto=format&fit=crop", // Man smiling
+        image: "/images/result-2.png", // Man smiling
         technique: "DHI",
     },
     {
         id: 3,
         title: "Ön Hat Tasarımı",
-        image: "https://images.unsplash.com/photo-1618077360395-f3068be8e001?q=80&w=600&auto=format&fit=crop", // Mediterranean man
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop", // Mediterranean man
         technique: "Estetik",
     },
     {
         id: 4,
         title: "Sakal Ekimi",
-        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=600&auto=format&fit=crop", // Beard
+        image: "https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?q=80&w=800&auto=format&fit=crop", // Beard
         technique: "DHI",
     },
     {
         id: 5,
         title: "Tepe Bölgesi",
-        image: "https://images.unsplash.com/photo-1596378431951-8a9d8225e043?q=80&w=600&auto=format&fit=crop", // Man looking up?
+        image: "https://images.unsplash.com/photo-1503910397240-edc7320092c2?q=80&w=800&auto=format&fit=crop", // Man looking up?
         technique: "Sapphire",
     }
 ];

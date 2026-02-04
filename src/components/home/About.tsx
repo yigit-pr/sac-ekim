@@ -14,12 +14,12 @@ export default function About() {
 
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4 mt-12">
-                                <div className="h-64 bg-[url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Doctor */}
-                                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Hospital */}
+                                <div className="h-64 bg-[url('/images/about-doctor.png')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Doctor */}
+                                <div className="h-48 bg-[url('/images/about-clinic.png')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Hospital */}
                             </div>
                             <div className="space-y-4">
-                                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Hair close up? */}
-                                <div className="h-64 bg-[url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Patient */}
+                                <div className="h-48 bg-[url('/images/about-procedure.png')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Hair close up? */}
+                                <div className="h-64 bg-[url('/images/about-consultation.png')] bg-cover bg-center rounded-2xl shadow-lg" /> {/* Patient */}
                             </div>
                         </div>
                     </div>
