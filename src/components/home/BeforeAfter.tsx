@@ -32,7 +32,7 @@ const results = [
     {
         id: 5,
         title: "Tepe Bölgesi",
-        image: "https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?q=80&w=800", // Man looking up?
+        image: "/images/result-crown-uploaded.jpg", // Man looking up?
         technique: "Sapphire",
     }
 ];
