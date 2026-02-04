@@ -26,13 +26,13 @@ const results = [
     {
         id: 4,
         title: "Sakal Ekimi",
-        image: "https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?q=80&w=800&auto=format&fit=crop", // Beard
+        image: "https://images.unsplash.com/photo-1590540179852-2110a54f673a?q=80&w=800", // Beard
         technique: "DHI",
     },
     {
         id: 5,
         title: "Tepe Bölgesi",
-        image: "https://images.unsplash.com/photo-1503910397240-edc7320092c2?q=80&w=800&auto=format&fit=crop", // Man looking up?
+        image: "https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?q=80&w=800", // Man looking up?
         technique: "Sapphire",
     }
 ];

@@ -29,7 +29,7 @@ export default function Services() {
                         En Son Teknoloji ile <span className="text-primary">Mükemmel Sonuçlar</span>
                     </h2>
                     <p className="text-slate-600 text-lg">
-                        Gazi Clinic olarak, saç ekiminde dünyada kabul görmüş en ileri teknikleri kullanıyoruz.
+                        İzmir Clinic olarak, saç ekiminde dünyada kabul görmüş en ileri teknikleri kullanıyoruz.
                     </p>
                 </div>
 
