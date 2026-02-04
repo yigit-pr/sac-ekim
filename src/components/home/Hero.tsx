@@ -101,7 +101,7 @@ export default function Hero() {
                                     value={form.phone}
                                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-400"
-                                    placeholder="0555 555 55 55"
+                                    placeholder="0545 996 8908"
                                 />
                             </div>
 

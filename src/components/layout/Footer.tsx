@@ -48,16 +48,11 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-6">İletişim</h4>
                         <ul className="space-y-4 text-sm text-slate-300">
                             <li className="flex items-start gap-3">
-                                <MapPin className="w-5 h-5 text-secondary shrink-0" />
-                                <span>İstanbul, Türkiye<br />Şişli, Merkez Mh.</span>
+                                <span>İzmir, Türkiye</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-secondary shrink-0" />
-                                <span>+90 555 555 55 55</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Mail className="w-5 h-5 text-secondary shrink-0" />
-                                <span>kvkk@izmirclinic.com</span>
+                                <span>0545 996 8908</span>
                             </li>
                         </ul>
                     </div>
