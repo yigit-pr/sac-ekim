@@ -34,7 +34,7 @@ export default function About() {
                         </div>
 
                         <p className="text-slate-600 text-lg leading-relaxed">
-                            İzmir Clinic olarak 15 yıllık tecrübemiz ve uzman medikal ekibimizle, Türkiye'nin önde gelen saç ekim merkezlerinden biriyiz. Her yıl binlerce hastamızı hayallerindeki görünüme kavuşturuyoruz.
+                            İzmir Saç Tedavileri olarak 15 yıllık tecrübemiz ve uzman medikal ekibimizle, Türkiye'nin önde gelen saç ekim merkezlerinden biriyiz. Her yıl binlerce hastamızı hayallerindeki görünüme kavuşturuyoruz.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-6">

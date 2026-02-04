@@ -23,7 +23,7 @@ export default function Header() {
                     {/* Logo */}
                     <a href="/" className="flex items-center gap-2 group">
                         <span className="text-2xl font-bold tracking-tight font-display transition-colors text-primary">
-                            İzmir<span className="text-secondary">Clinic</span>
+                            İzmir<span className="text-secondary"> Saç Tedavileri</span>
                         </span>
                     </a>
 

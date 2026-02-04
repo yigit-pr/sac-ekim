@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Brand */}
                     <div>
-                        <h3 className="text-2xl font-bold font-display mb-4">İzmir<span className="text-secondary">Clinic</span></h3>
+                        <h3 className="text-2xl font-bold font-display mb-4">İzmir<span className="text-secondary"> Saç Tedavileri</span></h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-6">
                             Modern teknoloji ve uzman kadromuz ile hayalinizdeki görünüme kavuşturuyoruz. Saç ekimi ve estetik cerrahide güvenilir adres.
                         </p>
@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-white/10 text-center text-sm text-slate-400">
-                    <p>&copy; {new Date().getFullYear()} İzmir Clinic. Tüm hakları saklıdır.</p>
+                    <p>&copy; {new Date().getFullYear()} İzmir Saç Tedavileri. Tüm hakları saklıdır.</p>
                 </div>
             </div>
         </footer>
